@@ -51,5 +51,9 @@ class StupidListsTest(unittest.TestCase):
     def test_can_sort_list_with_odd_amount_of_elements_consisting_of_only_two_values_repeating_themeselves(self):
         self.assertEquals([1, 2, 1, 2, 1, 2, 1], self.sut.sort([1, 1, 1, 1, 2, 2, 2]))
 
+
+    def test_can_sort_list_with_even_amount_of_elements_and_50_percent_of_duplicates_in_the_middle(self):
+        self.assertEquals([1,2,3,2], self.sut.sort([1,2,2,3]))
+
 if __name__ == '__main__':
 	unittest.main()

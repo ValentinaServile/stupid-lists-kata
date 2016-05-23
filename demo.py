@@ -29,10 +29,7 @@ working([1, 2, 3, 4, 5, 5, 5, 5], 'Even amount of elements, 50% of which duplica
 working([1, 1, 1, 1, 1, 2, 3, 4, 5], 'Odd amount of elements, 50% + 1 of which duplicates (min value)')
 working([1, 2, 3, 4, 5, 5, 5, 5, 5], 'Odd amount of elements, 50% + 1 of which duplicates (max value)')
 
-still_not_working([1,2,2,3,4], 'Even amount of unique elements but even amount of elements overall, 50% of which duplicates (lower near middle value)') #
+still_not_working([1,2,2,3], '50% of duplicates in middle of list with even number of elements')
+still_not_working([1,2,3,3,3,3,4,5], '50% of duplicates in middle of list with even number of elements')
 
-still_not_working([1,2,3,42,2,3,4], 'Even amount of unique elements but even amount of elements overall, 50% of which duplicates (lower near middle value)')
-
-still_not_working([1,2,3,3,3,3,4,5], 'Even amount of unique elements and even amount of elements overall, 50% of which duplicates (middle value)')
-
-still_not_working([1,2,3,3,3,3,3,4,5], 'Odd amount of elements, 50% + 1 of which duplicates (middle value)') # 3,1,3,2,3,4,
+still_not_working([1,2,2,3,4], '50% of duplicates in middle of list with odd number of elements')
